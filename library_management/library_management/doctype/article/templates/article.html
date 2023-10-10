@@ -1,0 +1,42 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>{{ title }}</h1>
+specific article
+{% endblock %}
+
+<!-- this is a sample default web page template -->
+
+
+<!-- {% raw %}
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>{{ title }}</h1>
+<div>
+    <div class="py-20 row">
+        <img src="{{ image }}" alt="{{  title  }}">
+    </div>
+    <div class="col">
+        <h1>{{ title }}</h1>
+        <p class="lead">By {{ author }}</p>
+        <div>
+            {%- if status == 'Available' -%}
+            <span class="badge badge-success"></span>
+            {%- if status == 'Issued' -%}
+            <span class="badge badge-primary">Issued</span>
+            {%- endif -%}
+        </div>
+        <div class="mt-4">
+            <div>
+                Publisher: <strong>{{ publisher }}</strong>
+            </div>
+            <div>
+                ISBN: <strong>{{ isbn }}</strong>
+            </div>
+        </div>
+        <p>{{ description }}</p>
+    </div>
+</div>
+{% endblock %}
+{% endraw %} -->
